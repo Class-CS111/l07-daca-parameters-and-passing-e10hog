@@ -84,6 +84,8 @@ public class Main
         formatCard(surname, givenName, category, cardNum, birthCountry, termsAndConditions, sex, uscisNum, dateOfBirth, validDate, expireDate);
     }
 
+
+        // based on your parsed inputs of this function, it will print out a visual card that displays the information you inputted    
     public static String formatCard(String surname, String givenName, String category, String cardNum, String birthCountry, String termsAndConditions, char sex, String uscisNum, String dateOfBirth, String validDate, String expireDate) {
         System.out.printf("╔══════════════════════════════════════════════════════════════════════╗%n");
         System.out.printf("║%35s%35s║%n", TITLE_USA, "");
@@ -107,6 +109,7 @@ public class Main
         return "";
     }
 
+    // by inputting the month, year, and day of a certain date, it will return a string the input into a format of MM/DD/YYYY
     public static String formatDate(int month, int day, int year) {
         return String.format("%02d/%02d/%4d", month, day, year);
     }
